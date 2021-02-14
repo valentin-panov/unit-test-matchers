@@ -5,7 +5,7 @@ test('err data input', () => {
   expect(result).toBe('corrupt data input');
 });
 
-test('sort 2', () => {
+test('expect .not.toBe ', () => {
   const units = [
     { name: 'мечник', health: 80 },
     { name: 'маг', health: 90 },
@@ -17,7 +17,7 @@ test('sort 2', () => {
     { name: 'мечник', health: 80 },
   ];
   const result = sortUnitsByHealth(units);
-  expect(result).toEqual(unitsSorted);
+  expect(result).not.toBe(unitsSorted);
 });
 
 test('sort 5', () => {
